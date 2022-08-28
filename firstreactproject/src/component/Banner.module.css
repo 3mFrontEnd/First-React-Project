@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container img{
+    width: 100%;
+}
+
+.textContainer {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+
+.textContainer h1 {
+    font-size: 6rem;
+    color: #696969;
+}
+
+.textContainer p {
+    font-size: 2.4rem;
+    margin-top: 20px;
+    color: #696969;
+    position: absolute;
+    left: 70px;
+}
+
+.textContainer span {
+    color: #30c0e4;
+    font-weight: bold;
+    font-size: larger;
+}
