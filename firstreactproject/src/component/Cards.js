@@ -21,10 +21,6 @@ class Cards extends Component {
     render() {
         return (
             <div className={styles.container}>
-                {/* <Card image={macbook} name = "MacBook" cost= "$1199.99" />
-                <Card image={surface} name = "surface" cost= "$1299.99" />
-                <Card image={hp} name = "hp" cost= "$1099.99" />
-                <Card image={sony} name = "sony" cost= "$999.99" /> */}
                 {this.state.laptopData.map(laptop => <Card key={laptop.id} image={laptop.image} name ={laptop.name} cost={laptop.cost} /> )}
             </div>
         );
