@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Landing from "./component/Landing";
 import Footer from "./component/Footer";
@@ -10,10 +10,10 @@ class App extends Component{
     return(
       <div>
         <Navbar />
-        <Switch>
-          <Route path="/products" component={Products} />
-          <Route path="/" component={Landing} />
-        </Switch>
+        <Routes>
+          <Route path="/products" element={<Products />} />
+          <Route path="/" element={<Landing />} />
+        </Routes>
         <Footer />
       </div>
     )
